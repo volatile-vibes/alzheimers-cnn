@@ -1,5 +1,5 @@
-streamlit
+flask
 torch
 torchvision
 pillow
-scikit-learn
+gunicorn
