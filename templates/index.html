@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alzheimer’s Prediction Dashboard</title>
+</head>
+<body>
+    <h1>Upload MRI Image</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <p>Model Accuracy: {{ accuracy }}%</p>
+    {% endif %}
+</body>
+</html>
